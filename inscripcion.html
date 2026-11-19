@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mEstilo.css">
+    <title>Inscripcion - TechAcademy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <h1>TechAcademy</h1>
+        </div>
+        <nav class="navPrincipal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="mentoria.html">Mentoria</a></li>
+                <li><a href="inscripcion.html" id="btn_destacado">Inscribirse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor_principal">
+        <section id="catalogo">
+            <h2 class="titulo_centrado">Formulario de Inscripcion</h2>
+
+            <form action="inscripcion.html" method="GET" class="formulario_inscripcion">
+                
+                <div class="campo_form">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="campo_form">
+                    <label for="correo">Correo Electronico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+
+                <div class="campo_form">
+                    <label for="curso">Curso a Inscribirse:</label>
+                    <select id="curso" name="curso" required>
+                        <option value="">-- Selecciona un curso --</option>
+                        <option value="ciberseguridad">Fundamentos de la Ciberseguridad</option>
+                        <option value="ia">Introduccion a la IA Generativa</option>
+                        <option value="soporte">Fundamentos del Soporte Tecnico</option>
+                        <option value="datos">Fundamentos: Datos, datos, en todas partes</option>
+                        <option value="frontend">Desarrollo Web FrontEnd Avanzado</option>
+                        <option value="backend">Programacion Backend con APIs REST</option>
+                        
+                    </select>
+                </div>
+
+                <button type="submit" id="btn_accion" class="btn_enviar">Enviar Inscripcion</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TechAcademy</p>
+    </footer>
+</body>
+</html>
